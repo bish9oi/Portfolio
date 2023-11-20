@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- create website header -->
+    <div id="header">
+        <div class="container">
+            <!-- make website navbar -->
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fas-solid fa-circle-xmark" onclick="openmenu()"></i> -->
+                </ul>
+                <!-- <i class="fas-light fa-bars" onclick="closemenu()"></i> -->
+            </nav>
+<!-- create personal data -->
+            <div class="header-txt">
+                <p>web Developer</p>
+                <h1>Hi, I'm <span> Ravindra Bishnoi</span> <br> From Jodhpur</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section create -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p class="pop">My Self Ravindra Bishnoi. Currently i'm btech
+                        second year student.I have web Developer,graphic designer
+                        and front-end & back-end are good knowledge.Good communication 
+                        skill , team management & team work.
+                        Thank You
+                    </p>
+                    <!-- Education system create -->
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- Education content create -->
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Developer:-</span><br>Website designer & Development</li>
+                            <li><span>front-end:-</span><br>HTML, CSS, JAVASCRIPT, BOOTSTRAP, TAILWIND CSS</li>
+                            <li><span>back-end:-</span><br>Node.js, API, MYSQL, Rest API, Database, React.js </li>
+                            <li><span>Graphic designer:-</span><br>Canva, Figma, Adobephotoshop, Adobeillustator, Photopea</li>
+                        </ul> 
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Developer:-</span><br>Good Knowledge & Highly Experience</li>
+                            <li><span>front-end:-</span><br>1year Good knowledge</li>
+                            <li><span>Team Work & Team Lead :-</span><br>1-2 Year good Experience </li>
+                            <li><span>Graphic designer:-</span><br>I have good knowledge of graphic designer</li>
+                        </ul> 
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bechlor Of Technology:-</span><br>Rajasthan Technical University Kota</li>
+                            <li><span>Field:-</span><br>Computer Science & Engineering(2022-26)</li>
+                            <li><span>IIT JEE:-</span><br>ALLEN Career Institute Kota(2021-22) </li>
+                            <li><span>Class 12th:-</span><br>Vivekanand public School BJS. Jodhpur(2020-21) (91.20%)</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services make-->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>front-end Developer</h2>
+                    <p>I have good knowledge of website creating tools like html,css,javascript and 
+                        good knowledge of CSS framework like bootstrap & tailwind CSS. And js framework
+                        are good experience.
+                    </p>
+                    <a href="#">Learn more</a> 
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>back-end Developer</h2>
+                    <p>I have good knowledge of website creating tools like using of website back-end
+                        part control like node.js, Rest API , database, MYSQL, next.js etc.
+                    </p>
+                    <a href="#">Learn more</a> 
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Graphic designer</h2>
+                    <p>I have good knowledge of graphic design. tools like us canva, figma, Adobeillustator,
+                        Adobephotoshop, adobelightroom etc.
+                    </p>
+                    <a href="#" >Learn more</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio create -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you the talented people around <br>the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you the talented people around<br>the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you the talented people around <br>the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- link add -->
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- contact information -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bishnoiravindra344@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>+917568686929</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="me resume.pdf" class="btn btn2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- copy right create -->
+        <div class="copyright">
+            <p>Copyright kevin. Made with <i class="fa-solid fa-heart"></i>by Easy Tutorials</p>
+
+        </div>
+    </div>
+
+    <script src="app.js"> </script>
+
+</body>
+</html>
+
